@@ -1,3 +1,11 @@
+## Login Credentials  
+Use the following credentials to log in:  
+
+**Username:** `mor_2314`  
+**Password:** `83r5^_`  
+
+⚠ **Notice: Some features might not work properly due to a lack of backend API resources.**
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,11 +56,5 @@ export default tseslint.config({
   },
 })
 ```
-## Login Credentials  
-Use the following credentials to log in:  
 
-**Username:** `mor_2314`  
-**Password:** `83r5^_`  
-
-⚠ **Notice: Some features might not work properly due to a lack of backend API resources.**
 
