@@ -38,9 +38,9 @@ const orderSlice = createSlice({
       })
       .addCase(updateOrderStatus.fulfilled, (state, action) => {
         const index = state.orders.findIndex((order:any) => order.id === action.payload.id);
-        if (index !== -1) {
-          state.orders[index].status = action.payload.status;
-        }
+        // if (index !== -1) {
+        //   state.orders[index].status = action.payload.status;
+        // }
       });
   },
 });
