@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchProductById, Product } from "../store/productSlice";
 import { RootState, AppDispatch } from "../store/";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 const ProductDetail = () => {
     const { id } = useParams();

@@ -8,7 +8,7 @@ const OrderHistory: React.FC = () => {
     const { orders, loading, error } = useSelector((state: RootState) => state.orders);
 
     useEffect(() => {
-        dispatch(fetchOrders()); // Fetch orders on component mount
+        dispatch(fetchOrders());
     }, [dispatch]);
 
     return (

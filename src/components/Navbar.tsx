@@ -7,7 +7,6 @@ import { AppDispatch } from "../store";
 
 const Navbar: React.FC = () => {
     const { user } = useSelector((state: RootState) => state.auth);
-    console.log('usre', user)
     const dispatch = useDispatch<AppDispatch>()
 
     return (

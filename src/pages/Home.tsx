@@ -10,7 +10,6 @@ const Home: React.FC = () => {
     const navigate = useNavigate();
     const { list, loading, error } = useSelector((state: RootState) => state.products);
 
-    // Fetch products when component mounts
     useEffect(() => {
         dispatch(fetchProducts());
     }, [dispatch]);

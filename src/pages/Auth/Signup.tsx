@@ -11,6 +11,8 @@ const Signup: React.FC = () => {
     const navigate = useNavigate();
 
     const onSubmit = (data: any) => {
+        console.log(errors)
+
         dispatch(registerUser(data));
         navigate("/login");
     };

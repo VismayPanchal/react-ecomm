@@ -8,10 +8,11 @@ import { AppDispatch } from "../../store";
 
 const Login: React.FC = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const dispatch = useDispatch<AppDispatch>(); // Use the typed dispatch
+    const dispatch = useDispatch<AppDispatch>();
     const navigate = useNavigate();
 
     const onSubmit = (data: any) => {
+        console.log(errors)
         dispatch(loginUser({ username: data.username, password: data.password }))
             .unwrap()
             .then(() => {

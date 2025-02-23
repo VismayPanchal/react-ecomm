@@ -8,12 +8,10 @@ const Cart: React.FC = () => {
     const dispatch = useDispatch<AppDispatch>();
     const { items, loading, error } = useSelector((state: RootState) => state.cart);
 
-    // Fetch cart items when component mounts
     useEffect(() => {
         dispatch(fetchCart());
     }, [dispatch]);
 
-    // Remove item handler
     const handleRemove = (id: number) => {
         dispatch(removeItemFromCart(id));
     };
