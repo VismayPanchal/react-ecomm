@@ -47,7 +47,7 @@ export default tseslint.config({
     ...react.configs['jsx-runtime'].rules,
   },
 })
-
+```
 ## Login Credentials  
 Use the following credentials to log in:  
 
@@ -56,4 +56,3 @@ Use the following credentials to log in:
 
 ⚠ **Notice:** Some features might not work properly due to a lack of backend API resources.
 
-```
